@@ -47,7 +47,11 @@ app.get('/about', (req,res)=>{
         ],
         date : new Date().getUTCFullYear()
     })
-})
+});
+
+app.get('/projects',(req,res)=>{
+    res.render('projects')
+});
 
 app.get('/error',(req,res)=>{
     res.send({
